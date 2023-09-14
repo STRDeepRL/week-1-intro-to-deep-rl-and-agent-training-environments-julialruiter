@@ -47,7 +47,7 @@ CONFIGURATIONS = {
         CompetativeRedBlueDoorEnvV3,
         {"size": 8, "allow_agent_overlap": False, "has_obsticle": True, "teams": {"red": 2, "blue": 2}, "agents": 4},
     ),
-    "MultiGrid-CompetativeRedBlueDoor-v3-DTDE-Red-Single": (
+    "MultiGrid-CompetativeRedBlueDoor-v3-DTDE-Red-Single": (  # Task 1, HW 1:  adjust pickup penalty
         CompetativeRedBlueDoorEnvV3,
         {
             "size": 8,
@@ -62,7 +62,7 @@ CONFIGURATIONS = {
                     "key_pickup_sparse_reward": 0.5,
                     "ball_pickup_dense_reward": 0.5,
                     "dense_reward_discount_factor": {"ball_carrying_discount_factor": 0.9},
-                    "invalid_pickup_dense_penalty": 0.2, # HW1 FIXME 1 - This value maybe too high for dense penalty 
+                    "invalid_pickup_dense_penalty": 0.05, # HW1 FIXME 1 - This value maybe too high for dense penalty 
                 },
             },
         },
